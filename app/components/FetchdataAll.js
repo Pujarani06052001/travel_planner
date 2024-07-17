@@ -1,34 +1,3 @@
-// "use client"
-// import { useEffect, useState } from "react"
-
-// function Data() {
-//     const [text, setText] = useState([])
-//     useEffect(() => {
-//         const data = async () => {
-//             const url = await fetch("https://freetestapi.com/api/v1/destinations")
-//             const urldata = await url.json()
-//             console.log(urldata)
-//             setText(urldata)
-//         }
-//         data();
-//     }, [])
-//     return (
-//         <>
-//         <h1>data</h1>
-//         {
-//             text.map((e) => (
-//                 <div key={e.id}>
-//                     <h1>{e.name}</h1>
-//                     <img src={e.image} alt={e.name} />
-//                     <h1>{e.description}</h1>
-//                 </div>
-//             ))
-//         }
-//     </>
-//     )
-// }
-
-// export default Data;
 "use client"
 import { useEffect, useState } from "react"
 
