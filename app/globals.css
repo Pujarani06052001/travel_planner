@@ -6,7 +6,7 @@
 }
 .navbar a {
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -17,8 +17,8 @@
 }
 
 .navbar {
-  background-color: rgb(115, 64, 96);
-  color: white;
+  background-color:#fcfcfc;
+  color: black;
 }
 .login{
   margin-left: auto;
@@ -33,5 +33,37 @@
   margin-bottom: 17px;
 }
 .footer{
-  background-color: rgb(115, 64, 96);
+  background-color: #393e46;
+  height: 150px;
+}
+
+/* first page */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: auto; /* Adjust as needed */
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  z-index: 1; /* Ensure text is above the video */
+}
+
+
+.holidays{
+  text-align: center;
 }

@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href="https://www.recipetineats.com/" className="active">Home</a>
         <a href="/destination">Destination</a>
         <a href="Recipes">Hotel </a>
-        <input className="input" type="text" placeholder="Enter a Grocery"/>
+        <input className="input" type="text" placeholder="Enter a country"/>
         {/* <img className="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlJNDOU-G_CL6NQv_fDCgps3Mqq1QFXPRK0rXyRAXf2_u_hyZ6UPb45zGvGt1BbT1fic&usqp=CAU"/> */}
         <a className="login" href="#Login">Login</a>
         <a  className="sign" href="#Sign up">Sign-up</a>
