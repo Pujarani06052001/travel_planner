@@ -1,63 +1,44 @@
-* {
+*{
   background-color: none rgb(227, 227, 227);
 }
-
 .navbar {
-  height: 75px;
+  height: 75px; 
 }
-
 .navbar a {
   display: block;
   color: black;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-size: x-large;
+  font-size: 28px;
+  margin-left: 30px;
 }
-
 .textcolor {
   color: rgb(115, 64, 96);
 }
 
-.navbar {
-  background-color: #fcfcfc;
-  color: black;
-}
 
-.login {
+.login{
   margin-left: auto;
-  margin: auto;
 }
 
-.input {
-  margin: auto;
-  border-radius: 1%;
-  width: 30%;
-  height: 40px;
-  font-size: 17px;
-  margin-bottom: 17px;
-}
 
-.footer {
+.footer{
   background-color: #393e46;
   height: 150px;
 }
 
-/* first page */
 .video-container {
   position: relative;
   width: 100%;
   height: auto;
-  /* Adjust as needed */
   overflow: hidden;
 }
 
 .video {
   width: 100%;
-  height: auto;
-  /* Adjust as needed */
-  object-fit: cover;
-  /* Ensures the video covers the entire container */
+  height: 500px; 
+  object-fit: cover; 
 }
 
 .video-text {
@@ -69,71 +50,96 @@
   width: 100%;
   color: white;
   font-size: 3rem;
-  z-index: 1;
-  /* Ensure text is above the video */
+  z-index: 1; 
 }
 
 
-.holidays {
+.holidays{
   text-align: center;
 }
 
-.auth-container {
-  background: white;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  margin: 20px;
-  text-align: center;
-}
 
-/* Form styles */
-form {
+
+
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Input field styles */
-.auth-input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  font-size: 16px;
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
-/* Button styles */
-.auth-button {
-  padding: 10px;
-  border: none;
-  background-color: #007BFF;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.auth-button:hover {
-  background-color: #0056b3;
-}
-
-/* Link styles */
-.auth-link {
-  color: #007BFF;
+.nav-links a {
+  margin-left: 20px;
   text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.auth-link:hover {
-  text-decoration: underline;
-}
-
-/* Header styles for login/signup pages */
-.auth-header {
-  font-size: 24px;
-  margin-bottom: 20px;
   color: #333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.nav-links{
+  color: #007bff;
+}
+.navbar h1 {
+  font-size: 32px; 
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+  
+}
+
+.input {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  width: 250px;
+  font-size: 16px;
+  margin-right: 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.btn {
+
+  color: #fff;
+  background-color: #007bff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: #23527c;
+}
+
+.search-container > * {
+  height: 40px;
 }
