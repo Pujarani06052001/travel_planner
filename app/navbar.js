@@ -11,7 +11,6 @@ const Navbar = () => {
         <Link href="/destination">
           <span>Destination</span>
         </Link>
-        <input className="input" type="text" placeholder="Enter a country" />
         <Link href="/login">
           <span className="login">Login</span>
         </Link>
