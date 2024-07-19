@@ -48,16 +48,13 @@
   position: relative;
   width: 100%;
   height: auto;
-  /* Adjust as needed */
   overflow: hidden;
 }
 
 .video {
   width: 100%;
   height: auto;
-  /* Adjust as needed */
   object-fit: cover;
-  /* Ensures the video covers the entire container */
 }
 
 .video-text {
@@ -70,7 +67,6 @@
   color: white;
   font-size: 3rem;
   z-index: 1;
-  /* Ensure text is above the video */
 }
 
 
