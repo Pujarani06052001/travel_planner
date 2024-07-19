@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from "./components/Footer";
-import Fetchdata from "./components/FetchdataAll";
+import Footer from "./components/footer";
+import Fetchdata from "./components/fetchdataAll";
 
 import 'bootstrap/dist/css/bootstrap.css';
 
