@@ -1,4 +1,4 @@
-// import React from 'react';
+import './navbar.css';
 import Link from 'next/link';
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
           <span className="active">Home</span>
         </Link>
         <Link href="/destination">
-          <span>Destination</span>
+          <span className="destination">Destination</span>
         </Link>
         <Link href="/login">
           <span className="login">Login</span>

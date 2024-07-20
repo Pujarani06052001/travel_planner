@@ -24,7 +24,7 @@ function Fetchdata() {
 
     const Search = () => {
         const filterdata = deta.filter(show =>
-            show.name.toLowerCase().includes(filter.toLowerCase())
+            show.country.toLowerCase().includes(filter.toLowerCase())
         )
         setDisplay(filterdata)
         setFilter('') 
