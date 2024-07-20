@@ -9,3 +9,9 @@
     background-image:url("https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=600");
 }
   
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
