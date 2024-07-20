@@ -25,7 +25,19 @@ function BookNow() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Logic for form submission
-    alert('Form submitted successfully!');
+    alert('Booking successful!');
+    // Clear the form fields
+    setFormData({
+      destination: '',
+      goingDate: '',
+      comingDate: '',
+      members: '',
+      adults: '',
+      healthIssue: '',
+      adhar: '',
+      mobile: '',
+      age: ''
+    });
   };
 
   return (

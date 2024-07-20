@@ -22,7 +22,14 @@ function Signup() {
       return;
     }
 
+    // If validation passes
     alert('Signup successful!');
+
+    // Clear the form fields
+    setName('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
   };
 
   return (
@@ -38,6 +45,7 @@ function Signup() {
             placeholder="Enter name"
           />
         </label>
+        <br />
         <label>
           Email:
           <input
@@ -47,6 +55,7 @@ function Signup() {
             placeholder="Enter email"
           />
         </label>
+        <br />
         <label>
           Password:
           <input
@@ -56,6 +65,7 @@ function Signup() {
             placeholder="Enter password"
           />
         </label>
+        <br />
         <label>
           Confirm Password:
           <input
@@ -65,6 +75,7 @@ function Signup() {
             placeholder="Confirm password"
           />
         </label>
+        <br />
         <button type="submit">Signup</button>
       </form>
     </div>

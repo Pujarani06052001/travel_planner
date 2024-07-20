@@ -1,13 +1,18 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
-import './login.css'; 
+import './login.css';
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // Show an alert with a success message
     alert('Login successful!');
+    // Clear the form fields
+    setEmail('');
+    setPassword('');
     // You can add more logic here to handle the login process
   };
 
