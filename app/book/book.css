@@ -1,0 +1,81 @@
+/* BookNow.css */
+.book-now-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .book-now-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .book-now-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-col {
+    flex: 1;
+  }
+  
+  .book-now-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .book-now-form input[type="text"],
+  .book-now-form input[type="date"],
+  .book-now-form input[type="number"],
+  .book-now-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .book-now-form input[type="text"]:focus,
+  .book-now-form input[type="date"]:focus,
+  .book-now-form input[type="number"]:focus,
+  .book-now-form input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .book-now-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .book-now-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
