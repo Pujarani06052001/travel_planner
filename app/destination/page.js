@@ -205,7 +205,6 @@
 
 
 
-
 "use client";
 import { useEffect, useState } from "react";
 import './destination.css';
@@ -221,11 +220,16 @@ function Destination() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const url = await fetch("https://freetestapi.com/api/v1/destinations");
-            const urldata = await url.json();
-            setData(urldata);
-            setLoading(false);
-        }
+            try {
+                const response = await fetch("https://freetestapi.com/api/v1/destinations");
+                const urldata = await response.json();
+                setData(urldata);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
         fetchData();
     }, []);
 

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import './signup.css';
 
 function Signup() {
   const [name, setName] = useState('');
@@ -25,7 +26,7 @@ function Signup() {
   };
 
   return (
-    <div className="signup-container">
+    <div className="mainx signup-container">
       <form onSubmit={handleSubmit}>
         <h2>Signup</h2>
         <label>

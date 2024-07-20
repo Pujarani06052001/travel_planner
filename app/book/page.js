@@ -29,7 +29,7 @@ function BookNow() {
   };
 
   return (
-    <div className="book-now-container">
+    <div className="mainX book-now-container">
       <form onSubmit={handleSubmit} className="book-now-form">
         <h2>Book Now</h2>
         <div className="form-row">
