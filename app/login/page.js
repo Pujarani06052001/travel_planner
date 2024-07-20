@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-
+import './login.css'; 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,7 +12,7 @@ function Login() {
   };
 
   return (
-    <div className="form-container">
+    <div className="mainy form-container">
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <label>

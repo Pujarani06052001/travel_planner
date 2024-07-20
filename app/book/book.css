@@ -1,4 +1,16 @@
 /* BookNow.css */
+/* BookNow.css */
+.mainX{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+    background-image:url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+  
 .book-now-container {
     display: flex;
     justify-content: center;
