@@ -33,7 +33,7 @@ function Fetchdata() {
 
     return (
         <>
-            <div className="search-container">
+             <div className="search-container">
                 <input className="input" type="text" placeholder="Enter a country" value={filter} onChange={handlechnage} />
                 <button className="btn bg-primary text-white" onClick={Search}>Search</button>
             </div>
