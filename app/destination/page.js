@@ -19,6 +19,7 @@ function Destination() {
                 setData(urldata);
             } catch (error) {
                 console.error("Error fetching data:", error);
+                setNotFound(true); 
             } finally {
                 setLoading(false);
             }
@@ -41,12 +42,17 @@ function Destination() {
     const search = () => {
         const filterData = data.filter(show =>
             show.country.toLowerCase().includes(filter.toLowerCase()) ||
-            (show.name && show.name.toLowerCase().includes(filter.toLowerCase()))
+            (show.state && show.state.toLowerCase().includes(filter.toLowerCase()))
         );
         setDisplay(filterData);
-        setFilter('');
         setNotFound(filterData.length === 0);
+
+        setFilter('');
+        setGoingDate('');
+        setComingDate('');
     };
+
+    const isSearchButtonDisabled = !filter; 
 
     return (
         <>
@@ -72,7 +78,13 @@ function Destination() {
                     onChange={handleComingDateChange} 
                     placeholder="Coming Date" 
                 />
-                <button className="btn bg-primary text-white" onClick={search}>Search</button>
+                <button 
+                    className="btn bg-primary text-white" 
+                    onClick={search} 
+                    disabled={isSearchButtonDisabled}
+                >
+                    Search
+                </button>
             </div>
             {loading ? (
                 <div className="loading-container">
