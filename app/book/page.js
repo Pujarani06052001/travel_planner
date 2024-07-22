@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Footer from '../footer/footer';
 import './book.css'; // Ensure this path is correct
 
 function BookNow() {
@@ -41,6 +42,7 @@ function BookNow() {
   };
 
   return (
+    <>
     <div className="mainX book-now-container">
       <form onSubmit={handleSubmit} className="book-now-form">
         <h2>Book Now</h2>
@@ -149,6 +151,10 @@ function BookNow() {
         <button type="submit">Book Now</button>
       </form>
     </div>
+    <div>
+      <Footer/>
+    </div>
+    </>
   );
 }
 

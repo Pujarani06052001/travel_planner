@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import './signup.css';
+import Footer from '../footer/footer';
 
 function Signup() {
   const [name, setName] = useState('');
@@ -33,6 +34,7 @@ function Signup() {
   };
 
   return (
+    <>
     <div className="mainx signup-container">
       <form onSubmit={handleSubmit}>
         <h2>Signup</h2>
@@ -79,6 +81,10 @@ function Signup() {
         <button type="submit">Signup</button>
       </form>
     </div>
+    <div>
+      <Footer/>
+    </div>
+    </>
   );
 }
 
