@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from "./components/footer";
+import Footer from "./footer/footer";
 import Fetchdata from "./components/fetchdataAll";
 
 import 'bootstrap/dist/css/bootstrap.css';

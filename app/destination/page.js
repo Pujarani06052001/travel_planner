@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import './destination.css';
-
+// import Footer from "../footer/footer";
 function Destination() {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('');
@@ -19,7 +19,7 @@ function Destination() {
                 setData(urldata);
             } catch (error) {
                 console.error("Error fetching data:", error);
-                setNotFound(true); 
+                setNotFound(true);
             } finally {
                 setLoading(false);
             }
@@ -52,35 +52,35 @@ function Destination() {
         setComingDate('');
     };
 
-    const isSearchButtonDisabled = !filter; 
+    const isSearchButtonDisabled = !filter;
 
     return (
         <>
             <div className="search-container">
-                <input 
-                    className="input" 
-                    type="text" 
-                    placeholder="Enter a country or state" 
-                    value={filter} 
-                    onChange={handleChange} 
+                <input
+                    className="input"
+                    type="text"
+                    placeholder="Enter a country or state"
+                    value={filter}
+                    onChange={handleChange}
                 />
-                <input 
-                    className="input" 
-                    type="date" 
-                    value={goingDate} 
-                    onChange={handleGoingDateChange} 
-                    placeholder="Going Date" 
+                <input
+                    className="input"
+                    type="date"
+                    value={goingDate}
+                    onChange={handleGoingDateChange}
+                    placeholder="Going Date"
                 />
-                <input 
-                    className="input" 
-                    type="date" 
-                    value={comingDate} 
-                    onChange={handleComingDateChange} 
-                    placeholder="Coming Date" 
+                <input
+                    className="input"
+                    type="date"
+                    value={comingDate}
+                    onChange={handleComingDateChange}
+                    placeholder="Coming Date"
                 />
-                <button 
-                    className="btn bg-primary text-white" 
-                    onClick={search} 
+                <button
+                    className="btn bg-primary text-white"
+                    onClick={search}
                     disabled={isSearchButtonDisabled}
                 >
                     Search
@@ -121,7 +121,12 @@ function Destination() {
                         <h2 className="text-center">Please enter a country or state name to search for destinations.</h2>
                     )}
                 </div>
+                
+
             )}
+            {/* <div>
+                <Footer/>
+            </div> */}
         </>
     );
 }
