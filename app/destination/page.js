@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import './destination.css';
-import Footer from "../footer/footer";
+// import Footer from "../footer/footer";
 function Destination() {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('');

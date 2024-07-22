@@ -1,5 +1,3 @@
-// pages/Footer.js
-
 import Link from 'next/link';
 
 const Footer = () => {
@@ -39,9 +37,9 @@ const Footer = () => {
           </div>
           <div style={styles.column}>
             <h3>Contact Us</h3>
-            <p>Email: info@travelagency.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Address: 123 Travel Street, Adventure City</p>
+            <p>Email: Deepanjali</p>
+            <p>Phone: 90******12</p>
+            <p>Address: 123 Travel Street, Navgurukul</p>
           </div>
           <div style={styles.column}>
             <h3>Follow Us</h3>

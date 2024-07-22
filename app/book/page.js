@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+import './book.css'; 
 import Footer from '../footer/footer';
-import './book.css'; // Ensure this path is correct
 
 function BookNow() {
   const [formData, setFormData] = useState({
@@ -25,9 +25,9 @@ function BookNow() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic for form submission
+  
     alert('Booking successful!');
-    // Clear the form fields
+  
     setFormData({
       destination: '',
       goingDate: '',
