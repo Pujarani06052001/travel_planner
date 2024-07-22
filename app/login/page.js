@@ -8,12 +8,9 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Show an alert with a success message
     alert('Login successful!');
-    // Clear the form fields
     setEmail('');
     setPassword('');
-    // You can add more logic here to handle the login process
   };
 
   return (
