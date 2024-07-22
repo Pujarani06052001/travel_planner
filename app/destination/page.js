@@ -124,9 +124,9 @@ function Destination() {
                 
 
             )}
-            <div>
+            {/* <div>
                 <Footer/>
-            </div>
+            </div> */}
         </>
     );
 }
