@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import './book.css'; // Ensure this path is correct
+import './book.css'; 
+import Footer from '../footer/footer';
 
 function BookNow() {
   const [formData, setFormData] = useState({
@@ -24,9 +25,9 @@ function BookNow() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic for form submission
+  
     alert('Booking successful!');
-    // Clear the form fields
+  
     setFormData({
       destination: '',
       goingDate: '',
@@ -41,6 +42,7 @@ function BookNow() {
   };
 
   return (
+    <>
     <div className="mainX book-now-container">
       <form onSubmit={handleSubmit} className="book-now-form">
         <h2>Book Now</h2>
@@ -149,6 +151,10 @@ function BookNow() {
         <button type="submit">Book Now</button>
       </form>
     </div>
+    <div>
+      <Footer/>
+    </div>
+    </>
   );
 }
 

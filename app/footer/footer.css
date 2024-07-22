@@ -1,0 +1,23 @@
+/* components/Footer.module.css */
+.footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .linksContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .link {
+    text-align: center;
+  }
+  
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
